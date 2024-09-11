@@ -1,0 +1,111 @@
+/* Styles for the Linsights button */
+.linsights-button {
+  margin-left: 4px !important;
+  font-size: 12px !important;  /* Further reduced font size */
+  padding: 2px 6px !important;  /* Further reduced padding */
+  height: 24px !important;  /* Further reduced height */
+  min-width: 50px !important;  /* Reduced minimum width */
+  max-width: 80px !important;  /* Added maximum width */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.linsights-button img {
+  width: 14px !important;  /* Further reduced icon size */
+  height: 14px !important;
+  margin-right: 2px !important;
+}
+
+/* Ensure the button doesn't affect layout */
+.feed-shared-social-action-bar {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.linsights-button.loading img {
+  animation: spin 1s linear infinite;
+}
+
+/* Styles for the popup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  flex-grow: 1;
+  padding-right: 30px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.save-button {
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-message {
+  margin-top: 10px;
+  color: green;
+  text-align: center;
+}

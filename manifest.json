@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Linsights",
+  "version": "1.0",
+  "description": "Add insights to LinkedIn posts",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://*.linkedin.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
