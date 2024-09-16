@@ -1,11 +1,11 @@
 /* Styles for the Linsights button */
 .linsights-button {
   margin-left: 4px !important;
-  font-size: 12px !important;  /* Further reduced font size */
-  padding: 2px 6px !important;  /* Further reduced padding */
-  height: 24px !important;  /* Further reduced height */
-  min-width: 50px !important;  /* Reduced minimum width */
-  max-width: 80px !important;  /* Added maximum width */
+  font-size: 12px !important;
+  padding: 2px 6px !important;
+  height: 24px !important;
+  min-width: 50px !important;
+  max-width: 80px !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -15,7 +15,7 @@
 }
 
 .linsights-button img {
-  width: 14px !important;  /* Further reduced icon size */
+  width: 14px !important;
   height: 14px !important;
   margin-right: 2px !important;
 }
@@ -37,55 +37,55 @@
 }
 
 /* Styles for the popup */
-body {
+.linsights-popup {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   width: 300px;
 }
 
-.container {
+.linsights-container {
   display: flex;
   flex-direction: column;
 }
 
-h2 {
+.linsights-popup h2 {
   margin-top: 0;
 }
 
-.form-group {
+.linsights-form-group {
   margin-bottom: 15px;
 }
 
-label {
+.linsights-form-group label {
   display: block;
   margin-bottom: 5px;
 }
 
-input[type="range"],
-input[type="number"],
-input[type="password"],
-input[type="text"],
-textarea,
-select {
+.linsights-form-group input[type="range"],
+.linsights-form-group input[type="number"],
+.linsights-form-group input[type="password"],
+.linsights-form-group input[type="text"],
+.linsights-form-group textarea,
+.linsights-form-group select {
   width: 100%;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.password-input {
+.linsights-password-input {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.password-input input {
+.linsights-password-input input {
   flex-grow: 1;
   padding-right: 30px;
 }
 
-.eye-icon {
+.linsights-eye-icon {
   position: absolute;
   right: 5px;
   background: none;
@@ -95,7 +95,7 @@ select {
   color: #666;
 }
 
-.save-button {
+.linsights-save-button {
   background-color: #0077b5;
   color: white;
   border: none;
@@ -104,7 +104,7 @@ select {
   cursor: pointer;
 }
 
-.save-message {
+.linsights-save-message {
   margin-top: 10px;
   color: green;
   text-align: center;

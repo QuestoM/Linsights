@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get(['temperature', 'systemPrompt', 'maxTokens', 'apiKey', 'model'], function(items) {
     document.getElementById('temperature').value = items.temperature || 0.7;
     document.getElementById('temperatureValue').textContent = items.temperature || 0.7;
-    document.getElementById('systemPrompt').value = items.systemPrompt || '';
+    document.getElementById('systemPrompt').value = items.systemPrompt || 'אני עוזר AI';
     document.getElementById('maxTokens').value = items.maxTokens || 1024;
     document.getElementById('apiKey').value = items.apiKey || '';
     document.getElementById('model').value = items.model || 'claude-3-5-sonnet-20240620';

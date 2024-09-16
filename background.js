@@ -9,7 +9,8 @@ async function callClaudeAPI(systemPrompt, userPrompt, apiKey, model, temperatur
       headers: {
         'Content-Type': 'application/json',
         'X-API-Key': apiKey,
-        'anthropic-version': '2023-06-01'
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'  // Add this line
       },
       body: JSON.stringify({
         model: model,
